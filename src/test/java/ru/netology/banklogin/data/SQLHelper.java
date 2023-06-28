@@ -1,14 +1,12 @@
 package ru.netology.banklogin.data;
 
 import lombok.SneakyThrows;
+import org.apache.commons.dbutils.QueryRunner;
+import org.apache.commons.dbutils.handlers.ScalarHandler;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-
-import org.apache.commons.dbutils.QueryRunner;
-import org.apache.commons.dbutils.handlers.ScalarHandler;
-import ru.netology.banklogin.data.data.DataHelper;
 
 public class SQLHelper {
     private static QueryRunner runner = new QueryRunner();
